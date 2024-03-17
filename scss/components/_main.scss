@@ -1,0 +1,27 @@
+@import './ceiling.scss';
+@import './cataloge.scss';
+@import './cost.scss';
+@import './ready.scss';
+@import './trust.scss';
+@import './measure.scss';
+@import './calculation';
+@import './clients.scss';
+@import './proces';
+@import './result';
+@import './reviews';
+@import './boutus';
+@import './certificates';
+@import './info';
+@import './montage';
+@import './ad';
+@import './contact';
+.main {
+    @include container();
+}
+@media (max-width:370px) {
+    .main{
+        outline: none;
+        width: 350px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,72 @@
+@import "./mixin";
+@import '../cta';
+.ready-section {
+    margin-bottom: 10rem;
+    .ready-title {
+        font-weight: 600;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .ready-text {
+        margin: 0 auto;
+        width: 60rem;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #3138466a;
+        margin-bottom: 10rem;
+    }
+    .ready-cards{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20rem;
+        row-gap: 5rem;
+        .ready-card{
+            display: flex;
+            .ready-info-block{
+                background-color: #f7f7f9;
+                .ready-info-wrap{
+                    padding: 2rem 3rem;
+                    .ready-info-title{
+                        margin-bottom: 3rem;
+                        font-weight: 600;
+                        font-size: 2rem;
+                        line-height: 160%;
+                        text-transform: uppercase;
+                    }
+                    .info-line{
+                        @include flex();
+                        margin-bottom:2.5rem;
+                        .info-text{
+                            font-weight: 500;
+                            font-size: 1.6rem;
+                            color: #3138466a;
+                        }
+                    }
+                    .price-text{
+                        font-weight: 600;
+                        font-size: 2rem;
+                    }
+                }
+                .ready-info-btn{
+                    padding: 1.1rem 9rem;
+                    background-color: $btn-background-red;
+                    font-size: 1.6rem;
+                    color: #fff;
+                    &:hover{
+                        background-color: #242c3b;
+                        color: #f7f7f9;
+                    }
+                    transition: .3s ease-in-out;
+                    -webkit-transition: .3s ease-in-out;
+                    -moz-transition: .3s ease-in-out;
+                    -ms-transition: .3s ease-in-out;
+                    -o-transition: .3s ease-in-out;
+                }
+            }
+        }
+    }
+}

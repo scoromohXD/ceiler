@@ -1,0 +1,156 @@
+@import "./mixin";
+@import '../cta';
+.cost-section{
+    margin-bottom: 10rem;
+    .section-cost_text-wrap{
+        width: 49rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        .section-cost-title{
+            font-weight: 600;
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .section-cost-text{
+            font-size: $font-size-16;
+            color: $color-transperent;
+        }
+    }
+    .settings-block{
+        .sguare-line{
+            @include flex();
+            margin-bottom: 2rem;
+            .sguare-text{
+                font-weight: 500;
+                font-size: 2rem;
+            }
+        }
+        .room-line{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            .room-text{
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .room-images{
+                display: flex;
+                .room-img-wrap{
+                    margin-right: 2rem;
+                    .room-img{
+                        &:hover{
+                            transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -ms-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+}
+                        transition: 0.3s;
+}
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    .img-text{
+                        text-align: center;
+                        font-size: $font-size-16;
+                    }
+                }
+            }
+        }
+        .light-line{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            .light-text{
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .light-images{
+                display: flex;
+                .light-img-wrap{
+                    margin-right: 10.1rem;
+                    .light-img{
+                        transition: .3s;
+                        &:hover{
+                            transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -ms-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+}
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    .img-text{
+                        text-align: center;
+                        font-size: $font-size-16;
+                    }
+                }
+            }
+        }
+        .design-line{
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            .design-text{
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .design-input{
+                background-color: #f7f7f9;
+                border: none;
+                width: 86.9rem;
+                height: 6.5rem;
+                padding: 1rem;
+            }
+        }
+        .addres-line{
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            .addres-text{
+                font-weight: 500;
+                font-size: 2rem;
+                margin-right: 13rem;
+            }
+            .addres-input{
+                background-color: #f7f7f9;
+                padding: 1rem;
+                border: none;
+                width: 21.6rem;
+                height: 4.4rem;
+            }
+            .addres-btn{
+                background-color: $btn-background-red;
+                padding: 1rem 3rem;
+                text-align: center;
+                font-size: $font-size-16;
+                color:  #fff;
+                &:hover{
+                    background-color: #242c3b;
+                    color: #f7f7f9;
+                }
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+            }
+        }
+        .settings-send{
+            width: 30rem;
+            margin: 0 auto;
+            .send{
+                font-weight: 500;
+                font-size: 1.3rem;
+                color: $color-transperent;
+                margin-bottom: 2rem;
+            }
+            .send-line{
+                @include flex();
+            }
+        }
+    }
+}

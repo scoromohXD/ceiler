@@ -1,0 +1,75 @@
+@import "./mixin";
+@import '../cta';
+.ad-section{
+    margin-bottom: 3rem;
+    .ad-section-block{
+        display: flex;
+        justify-content: space-between;
+        .ad-text-wrap{
+            width: 60rem;
+            .ad-title{
+                font-weight: 600;
+                font-size: 3.6rem;
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+            }
+            .ad-text{
+                font-size: 1.6rem;
+                color: $color-transperent;
+            }
+        }
+        .ad-block-image{
+            .ad-block-img{
+                transition: .5s;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    .ad-diff-block{
+        display: flex;
+        justify-content: space-between;
+        .ad-section-ban{
+            .ad-ban-title{
+                font-weight: 600;
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                color: $color-transperent;
+                margin-bottom: 2rem;
+            }
+            .ad-ban-line{
+                @include flex();
+                margin-bottom: 1rem;
+                width: 48.4rem;
+                .ad-ban-text{
+                    padding: 1rem;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+        }
+        .ad-section-truth{
+            .ad-truth-title{
+                font-weight: 600;
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                color: #27ae60;
+                margin-bottom: 2rem;
+            }
+            .ad-truth-text{
+                padding: 1rem;
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .ad-truth-line{
+                background-color: #f7f7f9;
+                @include flex();
+                width: 69.7rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

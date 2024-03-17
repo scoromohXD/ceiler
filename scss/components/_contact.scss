@@ -1,0 +1,116 @@
+@import "./mixin";
+@import '../cta';
+.contact-section{
+    .contact-items-wrap{
+        display: flex;
+        justify-content: space-between;
+        .contact-posibles-block{
+            padding: 1rem;
+            width: 56rem;
+            .posible-title{
+                font-weight: 600;
+                font-size: 3.6rem;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+            }
+            .posible-info-line{
+                display: flex;
+                align-items: center;
+                margin-bottom: 2rem;
+                .posible-image{
+                    margin-right: 1rem;
+                    .posible-img{
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                }
+                .posible-text{
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                }
+                .posible-addres-text{
+                    font-weight: 500;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                }
+            }
+            .posible-button-wrap{
+                margin-bottom: 2rem;
+                @include flex();
+                .posible-button{
+                    display: flex;
+                    align-items: center;
+                    padding: 1.1rem 8rem;
+                    background-color: #f7f7f9;
+                    .posible-socai-image{
+                        margin-right: 1rem;
+                    }
+                    .posible-btn{
+                        color: #0000009d;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .posible-map{
+                iframe{
+                    width: 54rem;
+                    height: 30rem;
+                }
+            }
+        }
+        .contact-definetion-block{
+            padding: 2em 2rem 0rem 2rem;
+            width: 54.9rem;
+            background-color: $btn-background-red;
+            .definetion-text-wrap{
+                width: 50rem;
+                margin-bottom: 2rem;
+                .def-title{
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                    color: #fff;
+                    margin-bottom: 1rem;
+                }
+                .def-text{
+                    font-size: 1.6rem;
+                    color: #fff;
+                }
+            }
+            .def-input-line{
+                margin-bottom: 2rem;
+                display: flex;
+                justify-content: space-between;
+                .def-input{
+                    padding: 1.1rem 1.5rem;
+                    width: 24rem;
+                    height: 4.4rem;
+                    border: none;
+                }
+            }
+            .def-button{
+                background-color: $color-primary;
+                padding: 1rem 1rem;
+                text-align: center;
+                margin-bottom: 3rem;
+                .def-btn{
+                    color: #fff;
+                    font-size: 1.6rem;
+                }
+            }
+            .def-image{
+                width: 38rem;
+                margin: 0 auto;
+                .def-img{
+                    transition: .5s;
+                    &:hover{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}

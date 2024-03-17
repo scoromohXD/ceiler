@@ -1,0 +1,24 @@
+@import "./mixin";
+@import '../cta';
+.certificate-section{
+    margin-bottom: 5rem;
+    .certificate-section-title{
+        font-weight: 600;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .certificate-section-text{
+        font-size: 1.6rem;
+        text-align: center;
+        width: 50rem;
+        margin: 0 auto;
+        color: $color-transperent;
+        margin-bottom: 3rem;
+    }
+    .certificate-section-image{
+        .certificate-section-img{
+            width: 1300px;
+        }
+    }
+}

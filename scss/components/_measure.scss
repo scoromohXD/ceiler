@@ -1,0 +1,54 @@
+@import "./mixin";
+@import '../cta';
+.measure-section{
+    margin-bottom: 5rem;
+    .measure-block{
+        display: flex;
+        .measure-img-wrap{
+            .measure-img{
+                width: 65rem;
+                height: 36rem;
+            }
+        }
+        .measure-wrapper{
+            background-color: #f7f7f9;
+            .measure-items-wrap{
+                padding: 3rem 7.5rem;
+                .measure-title{
+                    color: #CF0953;
+                    font-weight: 600;
+                    font-size: 3.6rem;
+                    text-transform: uppercase;
+                }
+                .measure-ptitle{
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                    margin-bottom: 2rem;
+                }
+                .measure-text{
+                    width: 50rem;
+                    font-size: 1.6rem;
+                    color: #0000005d;
+                    margin-bottom: 2rem;
+                }
+                .measure-inputs{
+                    margin-bottom: 3rem;
+                    display: flex;
+                    justify-content: space-between;
+                    .measure-input{
+                        border: none;
+                        padding: 1.1rem 3.5rem;
+                        background-color: #efeff6;
+                    }
+                }
+                .measure-btn{
+                    color: #fff;
+                    background-color: #242c3b;
+                    padding: 1.1rem 16rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "./mixin";
+@import '../cta';
+.ceiling-info-section{
+    margin-bottom: 7rem;
+    .ceiling-info-title{
+        font-weight: 600;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    .ceiling-info-text{
+        font-size: 1.6rem;
+        color: $color-transperent;
+    }
+}

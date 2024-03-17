@@ -1,0 +1,10 @@
+@import '../cta';
+@mixin flex(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin container(){
+    width: $container-width;
+    margin: 0 auto;
+}

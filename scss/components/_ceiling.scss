@@ -1,0 +1,212 @@
+@import "./mixin";
+@import '../cta';
+.main {
+    .underkey-section {
+        margin-bottom: 5rem;
+
+        .underkey-wrap {
+            display: flex;
+
+            .underkey-block {
+                background-color: #f7f7f9;
+                padding: 2rem 3rem;
+                width: 53rem;
+                height: 60rem;
+
+                .underkey-title {
+                    color: #242c3b;
+                    font-weight: 600;
+                    font-size: 4rem;
+                    text-transform: uppercase;
+                    span {
+                        color: #CF0953;
+                    }
+                }
+
+                .underkey-text {
+                    color: $color-transperent;
+                    font-size: $font-size-16;
+                    width: 35rem;
+                }
+
+                .sguare-block {
+                    width: 41rem;
+                    background-color: #CF0953;
+                    padding: 1.4rem 1rem;
+
+                    .sguare-title {
+                        color: #fff;
+                        width: 31rem;
+                        font-weight: 600;
+                        font-size: 2.4rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    .sguare-text {
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                        width: 41rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .input-block {
+                        width: 41rem;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 2rem;
+
+                        .sguare-input {
+                            padding: 1.1rem 1.5rem;
+                            width: 39rem;
+                            height: 4.4rem;
+                            margin-bottom: 1rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .cost {
+                        margin-bottom: 2rem;
+                        @include flex();
+
+                        .cost-text {
+                            color: #fff;
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .offer-button {
+                        text-align: center;
+                        margin-bottom: 2rem;
+                        .offer-btn {
+                            &:hover{
+                                background-color: #13171f;
+                            }
+                            background-color: #242c3b;
+                            color: #fff;
+                            padding: 1rem 10rem;
+                            font-size: $font-size-16;
+                            transition: .3s; 
+                        }
+}
+
+                    .agree-block {
+                        padding: 0rem 3rem;
+
+                        .agree-text {
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .underkey-img {
+                height: 60rem;
+                width: 79rem;
+            }
+        }
+
+        .advantage {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            @include flex();
+
+            .advantage-item {
+                width: 25rem;
+                @include flex();
+
+                .advantage-img {
+                    margin-right: 1rem;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    transition: 1s;
+                    &:hover{
+                        transform: rotate(360deg);
+                        -webkit-transform: rotate(360deg);
+                        -moz-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        -o-transform: rotate(360deg);
+                    }
+                }
+
+                .advantage-text {
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .setter-wrapper {
+            background-color: #f7f7f9;
+            display: flex;
+            align-items: center;
+
+            .setter-block {
+                padding: 3rem;
+
+                .setter-title {
+                    font-weight: 500;
+                    font-size: 2rem;
+                    color: #CF0953;
+                }
+
+                .setter-ndtitle {
+                    font-weight: 600;
+                    font-size: 3.6rem;
+                    color: #242c3b;
+                    margin-bottom: 2rem;
+                }
+
+                .setter-text {
+                    font-size: $font-size-16;
+                    margin-bottom: 3rem;
+                    color: #242c3b8e;
+                }
+
+                .setter-button {
+                    position: relative;
+
+                    .setter-btn {
+                        padding: 1.3rem 17rem;
+                        background-color: #CF0953;
+                        color: #fff;
+                        transition: .3s;
+                        &:hover{
+                            background-color: $color-primary;
+                        }
+                    }
+
+                    .setter-vector {
+                        position: absolute;
+                        left: 35rem;
+                        top: .3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:370px){
+    .underkey-section{
+        .underkey-wrap{
+            .underkey-block{
+                background-color: #00000000;
+                .underkey-title{
+                    display: none;
+                }
+                .underkey-text{
+                    display: none;  
+                }
+            }
+            .underkey-image{
+                display: none;
+            }
+        }
+    }
+}

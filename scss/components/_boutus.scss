@@ -1,0 +1,10 @@
+@import "./mixin";
+@import '../cta';
+.boutus-section{
+    margin-bottom: 6rem;
+    .boutus-section-image{
+        .boutus-section-img{
+            width: 100%;
+        }
+    }
+}

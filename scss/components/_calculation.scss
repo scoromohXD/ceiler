@@ -1,0 +1,170 @@
+@import "./mixin";
+@import '../cta';
+.calculation-section{
+    margin-bottom: 10rem;
+    .calculation-wrap{
+        @include flex();
+        margin-bottom: 3rem;
+        .calculation-info-block{
+            width: 64rem;
+            .calculation-title{
+                font-weight: 600;
+                font-size: 3.6rem;
+                text-transform: uppercase;
+            }
+            .calculation-text{
+                font-size: 1.6rem;
+                color: #0000005f;
+                margin-bottom: 2rem;
+            }
+            .calculation-type-block{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 3rem;
+                .calculation-type-wrap{
+                    .calculation-type-title{
+                        background-color: #f7f7f9;
+                        padding: 0.8rem 2rem;
+                        width: 28.5rem;
+                        height: 4.3rem;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        margin-bottom: 2rem;
+                    }
+                    .calculation-types{
+                        @include flex();
+                        .types-button{
+                            padding: 0.8rem 2rem;
+                            width: 13.8rem;
+                            height: 3.8rem;
+                            border: 1px solid #e5eaf3;
+                            text-align: center;
+                            margin-bottom: 1rem;
+                            &:hover{
+                                background-color: #cf0953;
+                            }
+                            .types-btn{
+                                color: #6a7180;
+                                font-weight: 500;
+                                font-size: 1.6rem;
+                                &:hover{
+                                    color: #fff;
+                                }
+                            }
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+            .calculation-num-block{
+                display: flex;
+                justify-content: space-between;
+                .calculation-num-wrap{
+                    .calcualion-num-title{  
+                        text-align: center;
+                        background-color: #f7f7f9;
+                        padding: 0.8rem 2rem;
+                        width: 28.5rem;
+                        height: 4.3rem;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        margin-bottom: 2rem;
+                    }
+                    .calculation-nums{
+                        text-align: center;
+                        .nums-text{
+                            font-weight: 500;
+                            font-size: 1.3rem;
+                            color: #0000005c;
+                            margin-bottom: 1rem;
+                        }
+                        .nums-input{
+                            display: flex;
+                            margin: 0 auto;
+                            width: 19rem;
+                            .num-input{
+                                background-color: #f7f7f9;
+                                width: 10.5rem;
+                                height: 3.8rem;
+                                border: none;
+                                padding: 1rem 4.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .result-cost{
+        @include flex();
+        .result-cost-text{
+            font-weight: 600;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            color: #0000005f;
+            span{
+                color: #000;
+            }
+        }
+        .result-cost-num-wrap{
+            width: 60rem;
+            .result-num-text{
+                font-weight: 500;
+                font-size: 1.3rem;
+                color: #0000005f;
+                margin-bottom: 1rem;
+            }
+
+            .result-num-line{
+                margin-bottom: 2rem;
+                @include flex();
+                .result-input-num{
+                    padding: 1.1rem 2rem;
+                    width: 19.7rem;
+                    height: 4.4rem;
+                    border: 2px solid #00000039;
+                }
+                .result-line__button{
+                    padding: 1.1rem 1.5rem;
+                    width: 10.6rem;
+                    height: 4.4rem;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    border: 2px solid #00000039;
+                    .result-btn{
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        color: #000000b0;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .result-btn-line{
+                @include flex();
+                .result_button{
+                    background-color: #cf0953;
+                    padding: 1.1rem 4rem;
+                    width: 30.3rem;
+                    height: 4.4rem;
+                    font-size: 1.6rem;
+                    text-align: center;
+                    .result_butn{
+                        color: #fff;
+                    }
+                }
+                .result-btn-text-wrap{
+                    width: 24rem;
+                    .result-btn-text{
+                        font-size: 1rem;
+                        text-align: center;
+                        color: #0000005f;
+                    }
+                }
+            }
+        }
+    }
+}

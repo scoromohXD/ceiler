@@ -1,0 +1,46 @@
+@import "./mixin";
+@import '../cta';
+.trust-section{
+    margin-bottom: 5rem;
+    .trust-text-wrap{
+        width: 82rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        .trust-title{
+            text-align: center; 
+            font-weight: 600;
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .trust-text{
+            margin: 0 auto;
+            width: 64rem;
+            color: #3138466a;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    }
+    .trust-cards{
+        @include flex();
+        .trust-card{
+            background-color: #f7f7f9;
+            width: 28.5rem;
+            .trust-icon{
+                padding: 1rem ;
+            }
+            .trust-title{
+                padding: 1rem;
+                font-weight: 600;
+                font-size: 2.4rem;
+                text-transform: uppercase;
+            }
+            .trust-text{
+                padding: 1rem;
+                font-size: 1.6rem;
+                color: #3138466a;
+                
+            }
+        }
+    }
+}

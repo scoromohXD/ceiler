@@ -1,0 +1,94 @@
+@import "./mixin";
+@import '../cta';
+.cataloge-section {
+    margin-bottom: 3rem;
+    .cataloge-text_wrapper {
+        width: 60rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        .cataloge-main-title {
+            font-weight: 600;
+            font-size: 3.6rem;
+            color: #242c3b;
+        }
+
+        .cataloge-main-text {
+            font-size: $font-size-16;
+            text-align: center;
+            color: $color-transperent;
+        }
+    }
+
+    .cataloge-cards {
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 9rem;
+        row-gap: 4rem;
+        .cataloge-card{
+            background-color: #f7f7f9;
+            width: 37.3rem;
+            .cataloge-text-wrap{
+                padding: 1rem;
+                .cataloge-card-title{
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+                .cataloge-card-text{
+                    color: $color-transperent;
+                    margin-bottom: 1rem;
+                }
+                .cataloge-card-cost{
+                    font-size: 2.4rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            .cataloge-card-button{
+                .cataloge-card-btn{
+                    background-color: $btn-background-red;
+                    padding: 1rem 14.4rem;
+                    text-align: center;
+                    &:hover{
+                        background-color: #242c3b;
+                    }
+                    transition: .6s;
+                    -webkit-transition: .6s;
+                    -moz-transition: .6s;
+                    -ms-transition: .6s;
+                    -o-transition: .6s;
+}
+}
+            transition: .3s ease-in-out;
+            &:hover{
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+}
+            }
+    }
+    .cataloge-button__line{
+        @include flex();
+        .cataloge-btn{
+            padding: 1rem 3rem;
+            text-decoration: none;
+            color: #242c3b;
+            background-color: #f7f7f9;
+            font-size: 1.6rem;
+            &:hover{
+                background-color: #242c3b;
+                color: #f7f7f9;
+            }
+            transition: .3s ease-in-out;
+            -webkit-transition: .3s ease-in-out;
+            -moz-transition: .3s ease-in-out;
+            -ms-transition: .3s ease-in-out;
+            -o-transition: .3s ease-in-out;
+}
+    }
+}

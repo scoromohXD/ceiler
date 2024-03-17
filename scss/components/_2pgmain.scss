@@ -1,0 +1,11 @@
+@import './matte';
+@import './mcost';
+@import './calculation';
+@import './about';
+@import './ready';
+@import './result';
+@import './interests';
+@import './contact';
+.main {
+    @include container();
+}

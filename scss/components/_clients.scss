@@ -1,0 +1,86 @@
+    @import "./mixin";
+    @import '../cta';
+.clients-section{
+    margin-bottom: 5rem;
+    .clients-text-wrap{
+        width: 60rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        .client-section-title{
+            text-align: center;
+            font-weight: 600;
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .client-section-text{
+            font-size: 1.6rem;
+            text-align: center;
+            color: #0000005d;
+        }
+    }
+    .client-cards{
+        display: flex;
+        margin-bottom: 5rem;
+        .client-card{
+            padding: 1rem;
+            .card-text-wrp{
+                width: 41rem;
+                .client-card-text{
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    color: $color-transperent;
+                    margin-bottom: 1rem;
+                }
+                .client-card-stars{
+                    margin-bottom: 1.5rem;
+                }
+                .client-card-title{
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    text-transform: uppercase;
+                }
+            }
+            .done-wrap{
+                padding: 1rem;
+                .done-title{
+                    font-weight: 500;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    color: $color-transperent;
+                    margin-bottom: 2rem;
+                }
+                .done-text{
+                    font-size: 1.6rem;
+                    color: $color-transperent;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .client-addres{
+                display: flex;
+                .client-cost{
+                    padding: .5rem 1.5rem;
+                    background-color: $btn-background-red;
+                    width: 20rem;
+                    height: 5.5rem;
+                    font-size: 1.6rem;
+                    color: #fff;
+                    .client-text-addres{
+                        font-size: 1.6rem;
+                    }
+                }
+                .client-addres-wrp{
+                    width: 36.1rem;
+                    height: 5.5rem;
+                    background-color: $color-primary;
+                    color: #fff;
+                    .client-text-addres{
+                        font-size: 1.6rem;
+                        padding: 1.5rem 1rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

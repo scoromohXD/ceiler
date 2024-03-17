@@ -1,0 +1,81 @@
+@import "./mixin";
+@import '../cta';
+.matte-section{
+    margin-bottom: 5rem;
+    .matte-text-wrap{
+        width: 98rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        .matte-title{
+            font-weight: 600;
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .matte-text{
+            font-size: 1.6rem;
+            text-align: center;
+            color: $color-transperent;
+            margin-bottom: 2rem;
+        }
+        .matte-cost-line{
+            width: 24.3rem;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            .matte-cost{
+                margin-right: 1rem;
+                .matte-text-cost{
+                    text-align: center;
+                    color: $color-transperent;
+                }
+                .matte-title-cost{
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    color: $btn-background-red;
+                }
+            }
+        }
+    }
+    .application-wrap{
+        display: flex;
+        .application-block{
+            padding: 2rem 1rem;
+            background-color: $btn-background-red;
+            .app-title{
+                font-weight: 600;
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                width: 30.5rem;
+                color: #fff;
+                margin-bottom: 1.5rem;
+            }
+            .app-input{
+                padding: 1.1rem 1.5rem;
+                width: 43rem;
+                height: 5rem;
+                border: none;
+                margin-bottom: 1.5rem;
+            }
+            .app-button{
+                margin-bottom: 1.5rem;
+                padding: 1.5rem 1rem;
+                text-align: center;
+                background-color: $color-primary;
+            }
+            .app-text{
+                margin: 0 auto;
+                width: 35rem;
+                text-align: center;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    }
+    .application-catloge-image{
+        .app-cataloge-img{
+            width: 100%;
+        }
+    }
+}

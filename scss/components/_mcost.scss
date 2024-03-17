@@ -1,0 +1,22 @@
+@import "./mixin";
+@import '../cta';
+.mate-cost-section{
+    margin-bottom: 5rem;
+    .mate-cost-text_wrp{
+        margin-bottom: 3rem;
+    .matte-cost-title{
+        width: 76rem;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    }
+    .mcost-image{
+        border: 1px solid #00000019;
+        .mcost-img{
+            width: 100%;
+        }
+    }
+}
